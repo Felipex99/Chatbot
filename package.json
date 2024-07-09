@@ -1,0 +1,16 @@
+{
+  "name": "Scrim-s0g7bqstbl",
+  "description": "https://v2.scrimba.com/s0g7bqstbl",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mistralai/mistralai": "0.0.10",
+    "langchain": "^0.2.8",
+    "ollama": "^0.5.2",
+    "vite": "latest"
+  }
+}
