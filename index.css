@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 body {
     font-family: Montserrat,Arial, Helvetica, sans-serif;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat",Arial, Helvetica, sans-serif;
+>>>>>>> f2a60ea00c66b4c0ed875e7e485cf21afee6ccc4
     background: #000000;
     color:  white !important;
     text-align: center;
@@ -8,10 +15,17 @@ body {
     flex-direction: column;
 }
 p {
+<<<<<<< HEAD
     font-family: Montserrat,Arial, Helvetica, sans-serif;
 }
 h1 {
     margin-top: 40px;
+=======
+    font-family: "Montserrat",Arial, Helvetica, sans-serif;
+}
+h1 {
+    margin: 0px;
+>>>>>>> f2a60ea00c66b4c0ed875e7e485cf21afee6ccc4
 }
 
 .wrapper {
@@ -27,8 +41,14 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     border-radius: 0px;
     margin-bottom: 20px
+=======
+    text-align: center;
+    border-radius: 0px;
+    margin-bottom: 20px;
+>>>>>>> f2a60ea00c66b4c0ed875e7e485cf21afee6ccc4
 }
 
 header img {
@@ -39,17 +59,35 @@ header h1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+<<<<<<< HEAD
 }
 
 footer {
     /* background: #2B292A; */
+=======
+    justify-content: baseline;
+}
+
+footer {
+>>>>>>> f2a60ea00c66b4c0ed875e7e485cf21afee6ccc4
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content:center;
+<<<<<<< HEAD
     margin-left: 20%;
     margin-right: 20%;
     border-radius: 10px;
+=======
+    margin: 0 auto;
+    width: 60%;
+    border-radius: 10px;
+    bottom:0;
+    height: 15vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+>>>>>>> f2a60ea00c66b4c0ed875e7e485cf21afee6ccc4
 }
 
 form{
@@ -61,8 +99,14 @@ textarea#prompt-input{
     background-color: #2B292A;
     border-radius: 30px;
     border:1 solid;
+<<<<<<< HEAD
     padding: 2%;;
     resize: none;
+=======
+    padding: 1.7%;;
+    resize: none;
+    font-size:15px;
+>>>>>>> f2a60ea00c66b4c0ed875e7e485cf21afee6ccc4
     font-family: "Montserrat";
     color: white;
     height: 20px;
@@ -82,9 +126,15 @@ textarea#prompt-input::placeholder{
     color: white;
     text-align: center;
     margin-left: 20%;
+<<<<<<< HEAD
     margin-right: 20%;
     margin-bottom: 20px;
     padding: 20px;
+=======
+    margin-right: 25%;
+    margin-bottom: 20px;
+    padding: 1px;
+>>>>>>> f2a60ea00c66b4c0ed875e7e485cf21afee6ccc4
     border:1.7px solid;
     border-radius: 25px;
     border-color:#007236;
@@ -95,10 +145,17 @@ textarea#prompt-input::placeholder{
     background: #27292c;
     color: white ;
     text-align: center;
+<<<<<<< HEAD
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 20px;
     padding:1rem;
+=======
+    margin-left: 25%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+    padding:1px;
+>>>>>>> f2a60ea00c66b4c0ed875e7e485cf21afee6ccc4
     border:1px solid;
     border-radius: 25px;
 }
