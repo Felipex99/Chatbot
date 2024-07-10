@@ -42,7 +42,7 @@ header h1 {
 }
 
 footer {
-    background: #2B292A;
+    /* background: #2B292A; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -58,12 +58,14 @@ form{
 }
 
 textarea#prompt-input{
-    background-color: transparent;
-    border:0;
-    resize:none;
+    background-color: #2B292A;
+    border-radius: 30px;
+    border:1 solid;
+    padding: 2%;;
+    resize: none;
     font-family: "Montserrat";
     color: white;
-    height: 18px;
+    height: 20px;
     overflow-y: hidden;
     flex:1;
 }
