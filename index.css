@@ -29,8 +29,9 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
     border-radius: 0px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 header img {
@@ -41,6 +42,7 @@ header h1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    justify-content: baseline;
 }
 
 footer {
@@ -91,7 +93,7 @@ textarea#prompt-input::placeholder{
     margin-left: 20%;
     margin-right: 25%;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 1px;
     border:1.7px solid;
     border-radius: 25px;
     border-color:#007236;
@@ -105,7 +107,7 @@ textarea#prompt-input::placeholder{
     margin-left: 25%;
     margin-right: 20%;
     margin-bottom: 20px;
-    padding:1rem;
+    padding:1px;
     border:1px solid;
     border-radius: 25px;
 }
