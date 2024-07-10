@@ -67,6 +67,7 @@ textarea#prompt-input{
     color: white;
     height: 20px;
     overflow-y: hidden;
+    outline: none;
     flex:1;
 }
 
