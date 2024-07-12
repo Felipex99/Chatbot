@@ -2,7 +2,7 @@ import ollama from 'ollama'
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter"
 import { createClient } from '@supabase/supabase-js'
 
-const SUPABASE_URL = "https://ohitcvvlqfjnnxtacgtb.supabase.co"
+const SUPABASE_URL = "https://ohitcvvlqfjnnxtacgtb.supabase.co/rest/v1/text" 
 const SUPABASE_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9oaXRjdnZscWZqbm54dGFjZ3RiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTk5MDU5OTcsImV4cCI6MjAzNTQ4MTk5N30.AVBzGv4JkcK-KDa8toYBi3V_dOA2DWBxX4iWnN2aq68"
 const supabase = createClient(SUPABASE_URL , SUPABASE_API_KEY)
 
@@ -63,10 +63,10 @@ document.addEventListener("DOMContentLoaded", function(){
             }]})
             
             resposta.innerHTML = response.message.content
+            console.log(textarea.value)
         }catch(error){
             console.error("Erro ao solicitar a ia: ",error)
         }
-
     }
     
     textarea.addEventListener("keydown", async (event) =>{
@@ -85,5 +85,9 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 })
 
-await supabase.from("text").insert(list_content_embedding)
+try{
+    await supabase.from("teste").insert(list_content_embedding)
+}catch(error){
+    console.error(error)
+}
 console.log("Data Uploaded!!!")
