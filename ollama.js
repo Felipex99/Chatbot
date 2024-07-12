@@ -13,23 +13,29 @@ async function splitDocument(path){
     return textArr
 }
 
-const list_chunks = splitDocument("./src/text.txt")
+const list_chunks = await splitDocument("./src/text.txt")
+
 
 async function embedding(list_chunks){
-    const embeddingResponse = await ollama.embeddings({
-        model: "mistral-embed",
-        prompt: list_chunks,
-    })
-
-
+    const text_list = []
+    let embeddingResponse = []
+    for(let i = 0;i < list_chunks.length;i++){
+        embeddingResponse = await ollama.embeddings({
+            model: "all-minilm",
+            prompt: list_chunks[i],
+        })
+        text_list.push(embeddingResponse.embedding)
+    }
+    
     const content_embedding = list_chunks.map((chunk, i) => {
         return {
             content: chunk,
-            embedding: embeddingResponse.data[i].embedding
+            embedding: text_list[i]
         }
     })
     return content_embedding
 }
+
 
 const list_content_embedding = await embedding(list_chunks)
 console.log(list_content_embedding)
