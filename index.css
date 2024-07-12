@@ -2,13 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 button:hover {
-    border-radius: 100%;
     scale: 53%;
     transition: all 0.3s;
 }
 
 button:not(:hover){
-    border-radius: 100%;
     scale: 50%;
     transition: all 0.4s;
 }

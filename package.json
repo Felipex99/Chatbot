@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@mistralai/mistralai": "0.0.10",
+    "@supabase/supabase-js": "^2.44.3",
     "langchain": "^0.2.8",
     "ollama": "^0.5.2",
     "vite": "latest"
