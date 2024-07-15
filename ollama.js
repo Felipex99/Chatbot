@@ -89,7 +89,7 @@ const list_content_embedding = await embedding(list_chunks)
         await gerarResposta();
         splitDocument("./src/text.txt")
     })
-})
+//})
 
 await supabase.from("text").insert(list_content_embedding)
 console.log("Data Uploaded!!!")
