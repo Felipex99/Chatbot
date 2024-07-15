@@ -14,7 +14,9 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_API_KEY)
 
 //1 texto input 
 //let textInput = prompt.value
-let textInput = "Qual é o nome do autor?"
+//let textInput = "Qual o nome do autor?"
+let textInput = "Quem escreveu o livro?"
+
 //2 criando o embedding da pergunta
 
 async function createEmbedding(textInput){
@@ -22,24 +24,25 @@ const embedding_response = await ollama.embeddings({
         model: "all-minilm",
         prompt: textInput
     })
+    console.log("Quem escreveu o livro?: ",embedding_response)
     return embedding_response
 }
 const embedding_prompt = await createEmbedding(textInput)
 
 //3 recuperando embeddings similares da pergunta
-const match_response = await matchResponse(embedding_prompt)
+// const match_response = await matchResponse(embedding_prompt)
 
-console.log(embedding_prompt)
+// console.log(embedding_prompt)
 
-async function matchResponse(embedding_prompt){
-    const { data:documents } = await supabase.rpc("match_ollama_new", {
-        query_embedding: embedding_prompt, // Pass the embedding you want to compare
-        match_threshold: 0.78, // Choose an appropriate threshold for your data
-        match_count: 1, // Choose the number of matches
-        })
-    console.log('DOCUMENTS: ',documents)
-    return documents
-}
+// async function matchResponse(embedding_prompt){
+//     const { data:documents } = await supabase.rpc("match_ollama_new", {
+//         query_embedding: embedding_prompt, // Pass the embedding you want to compare
+//         match_threshold: 0.78, // Choose an appropriate threshold for your data
+//         match_count: 1, // Choose the number of matches
+//         })
+//     console.log('DOCUMENTS: ',documents)
+//     return documents
+// }
 
 // async function funcao(){
 //     const { data: documents } = await supabase.rpc(
