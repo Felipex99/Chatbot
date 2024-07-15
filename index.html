@@ -1,14 +1,15 @@
 <!doctype html>
-<html>
+<html lang="pt-BR">
     <head>
         <title>IA.GO</title>
         <link rel="stylesheet" href="/index.css">
         <script type="module" src="input.js"></script>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class = "wrapper">
             <header>
-                <img src="src/assets/Logo sesapi.svg" style = "scale: 50%;">
+                <img title = "Sesapi" src="src/assets/Logo sesapi.svg" style = "scale: 50%;">
                 <h1>IA.GO</h1>
             </header>
             
@@ -17,6 +18,9 @@
                     <p id = "pergunta"></p>
                 </div>
                 <div id = "container-resposta" class = "resposta">
+                    
+                    <img title = "estrela" src = "src/assets/star_ai.svg" width="20px" height="20px" class = "img_star_anim">
+                    
                     <p id = "resposta"></p>
                 </div>
             </main>
@@ -29,7 +33,7 @@
                     rows = "1"
                     cols = "80"></textarea>
                     <button id = "btn-prompt"  >
-                        <img src="src/assets/send_btn.svg" 
+                        <img title = "enviar" src="src/assets/send_btn.svg" 
                         style="background: transparent;scale: 1.8;">
                     </button>
                 </div>
