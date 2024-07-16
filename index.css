@@ -202,12 +202,12 @@ textarea#prompt-input::placeholder{
     right:0px;
     animation:star_animation;
     animation-iteration-count:infinite;
-    animation-duration:2s;
+    animation-duration:3s;
 }
 
 .element2{
     animation:star_animation;
     animation-iteration-count:infinite;
-    animation-duration:2s;
+    animation-duration:3s;
     animation-direction:reverse;
 }
