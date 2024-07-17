@@ -13,23 +13,25 @@ const SUPABASE_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhY
 const supabase = createClient(SUPABASE_URL, SUPABASE_API_KEY)
 
 btn_prompt.addEventListener("click", async() =>{
+    txt_prompt = prompt.value
+    prompt.value = ""
     loading_star("block", "hidden")
     resposta.innerHTML = ""
-    txt_prompt = prompt.value
     pergunta.innerHTML = txt_prompt
     console.log("btn Pressionado")
     const conteudo = await exec() 
     await rag(txt_prompt, conteudo)
 })
 
-pergunta.addEventListener("keydown", async(event) =>{
+prompt.addEventListener("keydown", async(event) =>{
     if(event.key === "Enter"){
-        loading_star("block","hidden")
-        resposta.innerHTML = ""
         txt_prompt = prompt.value
+        event.preventDefault()
+        resposta.innerHTML = ""
+        prompt.value = ""
+        loading_star("block","hidden")
         pergunta.innerHTML = txt_prompt
         console.log("Enter Pressionado")
-        event.preventDefault()
         const conteudo = await exec() 
         await rag(textInput, conteudo)
     }
@@ -43,7 +45,7 @@ async function exec(){
 }
 
 //1 texto input 
-//let textInput = prompt.value
+let textInput = prompt.value
 //let textInput = "Qual o nome do autor?"
 // let textInput = "Quem escreveu o livro?"
 // let textInput = "Qual é a cultura abordada no livro?"
@@ -76,7 +78,6 @@ async function matchResponse(embedding_prompt){
 }
 
 async function rag(prompt, content){
-    console.log("TO NO RAG")
     let all_content = ''
     
     for(let i = 0; i < content.length; i++){
@@ -84,6 +85,7 @@ async function rag(prompt, content){
     }
 
     console.log("ALL_CONTENT: ",all_content)
+
     const response = await ollama.chat({
         model: "mistral",
         messages: [

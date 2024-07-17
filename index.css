@@ -155,7 +155,7 @@ textarea#prompt-input::placeholder{
 @keyframes star_animation {
     0% {
         opacity: 0%;
-        scale:50%
+        scale:50%;
     }25%  {
         opacity: 100%;
         scale:100%

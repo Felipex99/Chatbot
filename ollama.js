@@ -29,6 +29,7 @@ async function embedding(list_chunks){
     
     const text_list = []
     let embeddingResponse = []
+    
     for(let i = 0;i < list_chunks.length;i++){
         embeddingResponse = await ollama.embeddings({
             model: "all-minilm",
