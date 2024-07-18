@@ -1,7 +1,7 @@
 import ollama from "ollama"
 import { createClient } from "@supabase/supabase-js"
 
-let promptInput = document.getElementById("prompt-input")
+let prompt = document.getElementById("prompt-input")
 const btn_prompt = document.getElementById("btn-prompt")
 let pergunta = document.getElementById("pergunta")
 let resposta = document.getElementById("resposta")
@@ -13,23 +13,26 @@ const SUPABASE_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhY
 const supabase = createClient(SUPABASE_URL, SUPABASE_API_KEY)
 
 btn_prompt.addEventListener("click", async() =>{
-    pergunta.innerHTML = promptInput.value
-    resposta.innerHTML = ""
-    loading_star("block", "hidden")
     txt_prompt = prompt.value
+    prompt.value = ""
+    loading_star("block")
+    resposta.innerHTML = ""
+    pergunta.innerHTML = txt_prompt
     console.log("btn Pressionado")
     const conteudo = await exec() 
     await rag(txt_prompt, conteudo)
 })
 
-promptInput.addEventListener("keydown", async(event) =>{
+
+prompt.addEventListener("keydown", async(event) =>{
     if(event.key === "Enter"){
-        pergunta.innerHTML = txt_prompt
-        txt_prompt = promptInput.value
-        console.log("Enter Pressionado")
-        console.log(txt_prompt)
+        txt_prompt = prompt.value
         event.preventDefault()
-        loading_star("block","hidden")
+        resposta.innerHTML = ""
+        prompt.value = ""
+        loading_star("block")
+        pergunta.innerHTML = txt_prompt
+        console.log("Enter Pressionado")
         const conteudo = await exec() 
         await rag(txt_prompt, conteudo)
     }
@@ -38,13 +41,13 @@ promptInput.addEventListener("keydown", async(event) =>{
 async function exec(){
     const embedding_prompt = await createEmbedding(txt_prompt)
     const match_response = await matchResponse(embedding_prompt)
-    console.log(txt_prompt)
-    console.log(match_response)
+    console.log("exec txt prompt: ",txt_prompt)
+    console.log("exec match response: ",match_response)
     return match_response
 }
 
 //1 texto input 
-//let textInput = prompt.value
+let textInput = prompt.value
 //let textInput = "Qual o nome do autor?"
 // let textInput = "Quem escreveu o livro?"
 // let textInput = "Qual é a cultura abordada no livro?"
@@ -70,21 +73,21 @@ async function createEmbedding(txt){
 async function matchResponse(embedding_prompt){
     const { data: documents } = await supabase.rpc("match_ollama_new", {
         query_embedding: embedding_prompt, // Pass the embedding you want to compare
-        match_threshold: 0.28, // Choose an appropriate threshold for your data
+        match_threshold: 0.68, // Choose an appropriate threshold for your data
         match_count: 5, // Choose the number of matches
         })
     return documents
 }
 
 async function rag(prompt, content){
-    console.log("TO NO RAG \n PROMPT.VALUE: ",prompt.value)
     let all_content = ''
-    
+    console.log("CONTENT DO RAG: ",content)
     for(let i = 0; i < content.length; i++){
         all_content += content[i].content 
     }
 
     console.log("ALL_CONTENT: ",all_content)
+
     const response = await ollama.chat({
         model: "mistral",
         messages: [
@@ -103,10 +106,9 @@ async function rag(prompt, content){
     return response.message.content
 }
 
-function loading_star(star_visibility, question_visibility){
+function loading_star(star_visibility){
     star.style.display = star_visibility
-    resposta.style.visibility = question_visibility
-    promptInput.value = ''
+    prompt.value = ''
 }
 // const resposta_ia = await rag(textInput, match_response)
 // console.log(resposta_ia)
