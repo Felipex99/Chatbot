@@ -1,7 +1,7 @@
 import ollama from "ollama"
 import { createClient } from "@supabase/supabase-js"
 
-let prompt = document.getElementById("prompt-input")
+let promptInput = document.getElementById("prompt-input")
 const btn_prompt = document.getElementById("btn-prompt")
 let pergunta = document.getElementById("pergunta")
 let resposta = document.getElementById("resposta")
@@ -13,31 +13,32 @@ const SUPABASE_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhY
 const supabase = createClient(SUPABASE_URL, SUPABASE_API_KEY)
 
 btn_prompt.addEventListener("click", async() =>{
-    loading_star("block", "hidden")
+    pergunta.innerHTML = promptInput.value
     resposta.innerHTML = ""
+    loading_star("block", "hidden")
     txt_prompt = prompt.value
-    pergunta.innerHTML = txt_prompt
     console.log("btn Pressionado")
     const conteudo = await exec() 
     await rag(txt_prompt, conteudo)
 })
 
-pergunta.addEventListener("keydown", async(event) =>{
+promptInput.addEventListener("keydown", async(event) =>{
     if(event.key === "Enter"){
-        loading_star("block","hidden")
-        resposta.innerHTML = ""
-        txt_prompt = prompt.value
         pergunta.innerHTML = txt_prompt
+        txt_prompt = promptInput.value
         console.log("Enter Pressionado")
+        console.log(txt_prompt)
         event.preventDefault()
+        loading_star("block","hidden")
         const conteudo = await exec() 
-        await rag(textInput, conteudo)
+        await rag(txt_prompt, conteudo)
     }
 })
 
 async function exec(){
     const embedding_prompt = await createEmbedding(txt_prompt)
     const match_response = await matchResponse(embedding_prompt)
+    console.log(txt_prompt)
     console.log(match_response)
     return match_response
 }
@@ -53,10 +54,10 @@ async function exec(){
 
 //2 criando o embedding da pergunta
 
-async function createEmbedding(textInput){
+async function createEmbedding(txt){
     const embedding_response = await ollama.embeddings({
         model: "all-minilm",
-        prompt: textInput
+        prompt: txt
     })
     return embedding_response.embedding
 }
@@ -76,7 +77,7 @@ async function matchResponse(embedding_prompt){
 }
 
 async function rag(prompt, content){
-    console.log("TO NO RAG")
+    console.log("TO NO RAG \n PROMPT.VALUE: ",prompt.value)
     let all_content = ''
     
     for(let i = 0; i < content.length; i++){
@@ -105,6 +106,7 @@ async function rag(prompt, content){
 function loading_star(star_visibility, question_visibility){
     star.style.display = star_visibility
     resposta.style.visibility = question_visibility
+    promptInput.value = ''
 }
 // const resposta_ia = await rag(textInput, match_response)
 // console.log(resposta_ia)
