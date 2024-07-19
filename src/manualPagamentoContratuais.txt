@@ -1,0 +1,298 @@
+ANEXO ÚNICO DA PORTARIA Nº 2.028/2024
+POP 01
+Pagamento de despesas contratuais
+Processo pagamento despesas contratuais
+Descrição
+Processo de pagamento de despesas contratuais da Secretaria de Saúde
+1.1.1 Elementos do processo
+1.1.1.1 Sanear processo
+Processo
+Diagrama 2 - Subprocesso de saneamento despesa contratual
+1.1.1.2 Tarefa 1. Solicitação de pagamento
+Descrição
+Formalizar a solicitação de pagamento via usuário externo SEI, conf. M1, juntando toda a
+documentação constante no anexo do referido modelo.
+1- Requerimento
+2- Cópia do contrato e aditivos
+3- Nota de empenho
+4- Ordem de fornecimento/serviço
+5- Documento fiscal
+6- Comprovações de regularidade fiscal, trabalhista e previdenciária
+7- Outros documentos, caso exigidos no contrato
+Executantes
+Representante legal
+Responsável
+Representante legal
+| 7
+1.1.1.3 Tarefa 2. Análise da procedência.
+Descrição
+Analisar se a solicitação de pagamento de procedência contratual.
+1- Há contrato?
+2- O contrato é válido?
+3- Houve ordem de fornecimento?
+Se alguma das questões acima for respondida sim, a solicitação não é idônea.
+Executantes
+Gestão de contratos
+Responsável
+Gestão de contratos
+1.1.1.4 Tarefa 3. Analisar composição.
+Descrição
+Analisar a documentação exigida no art. 2º da Portaria:
+1- Requerimento
+2- Cópia do contrato e aditivos
+3- Nota de empenho
+4- Ordem de fornecimento/serviço
+5- Documento fiscal
+6- Comprovações de regularidade fiscal, trabalhista e previdenciária
+7- Outros documentos, caso exigidos no contrato
+| 8
+Executantes
+Gestão de contratos
+Responsável
+Gestão de contratos
+1.1.1.5 Tarefa 5. Solicitar Relatório
+Descrição
+Solicitar os relatórios dos fiscais dos contratos das unidades onde foram executadas
+parcelas do contrato
+Executantes
+Gestão de contratos
+Responsável
+Gestão de contratos
+1.1.1.6 Tarefa 6. Relatório de fiscal
+Descrição
+Elaborar o relatório de fiscalização / recebimento do contrato, conforme roteiro do SINCIN.
+Executantes
+Fiscal de contrato
+Responsável
+Fiscal de contrato
+1.1.1.7 Tarefa 7. Enviar relatório
+Descrição
+Após conclusão do relatório no SINCIN, assinar via SEI e enviar para Coordenação de
+Contratos.
+| 9
+Executantes
+Fiscal de contrato
+Responsável
+Fiscal de contrato
+1.1.1.8 Tarefa 8. Analisar relatórios.
+Descrição
+Analisar se todas as unidades enviaram os relatórios, notificando as unidades faltantes
+para cumprimento do prazo.
+Executantes
+Gestão de contratos
+Responsável
+Gestão de contratos
+1.1.1.9 Tarefa 10. Enviar ao NCI
+Descrição
+Enviar processo para análise do NCI, conforme decreto 17.526/2017.
+Executantes
+Gestão de contratos
+Responsável
+Gestão de contratos
+1.1.1.10 Tarefa 11. Analisar no SINCIN
+Descrição
+Analisar o processo seguindo o roteiro específico do SINCIN.
+| 10
+Executantes
+Núcleo de Controle Interno
+1.1.1.11 Tarefa 13. Enviar ao GAB
+Descrição
+Processo conforme, enviar ao Gabinete para análise e deliberação do secretário.
+Executantes
+Núcleo de Controle Interno
+Responsável
+Núcleo de Controle Interno
+1.1.1.12 Tarefa 14. Autorização
+Descrição
+Analisar o mérito do pedido, caso julgue pelo pagamento, elaborar despacho para o
+secretário autorizar, incluir no bloco SEI.
+Executantes
+Assessoria GAB
+Responsável
+Assessoria GAB
+1.1.1.13 Tarefa 16. Enviar ao Funsaúde
+Descrição
+Caso o pagamento seja autorizado, enviar ao Funsaúde para os procedimentos contábeis e
+financeiros.
+Executantes
+Assessoria GAB
+| 11
+Responsável
+Assessoria GAB
+1.1.1.14 Tarefa 17. Analisar tipologia
+Descrição
+Analisar a tipologia do pagamento se exige retenções, enviar para a contabilidade calcular,
+caso contrário, enviar para execução financeira.
+Executantes
+Gerência Funsaúde
+Responsável
+Gerência Funsaúde
+1.1.1.15 Tarefa 18. Fazer retenções
+Descrição
+Caso a despesa obrigue retenções, calculá-las e informá-las.
+Executantes
+Contabilidade
+Responsável
+Contabilidade
+1.1.1.16 Tarefa 19. Gerar PD
+Descrição
+Executar a liquidação da despesa e gerar a programação de desembolso no SIAFE,
+anexando no processo.
+Executantes
+Execução Financeira
+| 12
+Responsável
+Execução Financeira
+1.1.1.17 Tarefa 21. Gerar OB
+Descrição
+Caso a despesa esteja na programação de pagamento, gerar a OB e a RE para liberação no
+banco.
+Executantes
+Execução Financeira
+Responsável
+Execução Financeira
+1.1.1.18 Tarefa 22. Pagar.
+Descrição
+Executar a liberação da OB e RE no respectivo banco.
+Executantes
+Ordenador de despesa
+Responsável
+Ordenador de despesa
+1.1.1.19 Tarefa 23. Arquivar
+Descrição
+Após pagamento, arquivar processo para prestação de contas.
+Executantes
+Gerência Funsaúde
+| 13
+Responsável
+Gerência Funsaúde
+1.1.1.20 Tarefa 22. Pagar
+Descrição
+Executar a liberação da OB e RE no respectivo banco.
+Executantes
+Ordenador de despesa
+Responsável
+Ordenador de despesa
+1.1.1.21 Tarefa 20. Providenciar PP.
+Descrição
+Providenciar recursos para programação de pagamento.
+Executantes
+Ordenador de despesa
+Responsável
+Ordenador de despesa
+1.1.1.22 Sanear processo
+Processo
+Diagrama 2 - Subprocesso de saneamento despesa contratual
+1.1.1.23 Sanear processo
+| 14
+Processo
+Diagrama 2 - Subprocesso de saneamento despesa contratual
+1.1.1.24 Sanear processo
+Processo
+Diagrama 2 - Subprocesso de saneamento despesa contratual
+1.1.1.25 Arquivar
+| 15
+2 Diagrama 2
+| 16
+2.1 Subprocesso de saneamento despesa contratual
+2.1.1 Elementos do processo
+2.1.1.1 T1. Identificar o motivo da inconformidade
+Descrição
+Analisar o mérito do motivo da inconformidade processual. Se for saneável (algo puder ser
+feito legalmente para resolver), fazer tarefa seguinte. Caso contrário, arquivar o processo
+informando ao interessado.
+Executantes
+Gestão de contratos, Assessoria GAB, Núcleo de Controle Interno
+Responsável
+Setor Responsável
+Consultado
+Assessoria GAB
+Informado
+Setor Responsável
+2.1.1.2 T2. Identificar o setor responsável pela correção
+Descrição
+De acordo com a tarefa a ser executada para saneamento do processo, identificar o setor
+responsável por realizá-la, enviando os autos com solicitação de correção.
+Executantes
+Assessoria GAB, Gestão de contratos, Núcleo de Controle Interno
+Responsável
+Setor Responsável
+Consultado
+Assessoria GAB
+Informado
+Assessoria GAB
+2.1.1.3 T3. Enviar o processo para correção
+Descrição
+Após identificação do setor e tarefa a ser realizada para correção do processo, fazer o
+envio.
+Executantes
+Gestão de contratos, Núcleo de Controle Interno
+Responsável
+Setor Responsável
+Consultado
+Assessoria GAB
+Informado
+Assessoria GAB
+2.1.1.4 T4. Atribuir o processo para o servidor responsável
+Descrição
+Após identificar o motivo da inconformidade do processo, bem como a ação necessária
+para corrigi-la, atribuir os autos ao servidor designado para executar a tarefa,
+estabelecendo, de forma clara e objetiva, o que deve ser feito, como e quando.
+Executantes
+Setor Responsável
+Responsável
+Servidor designado
+| 18
+Consultado
+Assessoria GAB
+Informado
+Setor Responsável
+2.1.1.5 T5. Executar a tarefa de saneamento
+Descrição
+Ao receber designação para executar a tarefa necessária ao saneamento do processo,
+adotar as medidas pertinentes para solução do caso, conforme orientação superior.
+Executantes
+Servidor designado, Setor Responsável
+Responsável
+Servidor designado
+Consultado
+Setor Responsável
+Informado
+Setor Responsável
+2.1.1.6 T6. Enviar o processo para GFC
+Descrição
+Concluída a correção das pendências processuais, enviar os autos para o setor
+demandante para prosseguimento do trâmite.
+Executantes
+Setor Responsável, Servidor designado
+Responsável
+Setor Responsável
+| 19
+Consultado
+Setor Responsável
+Informado
+Gestão de contratos, Núcleo de Controle Interno, Assessoria GAB
+2.1.1.7 T7. Conferir se a inconformidade foi saneada
+Descrição
+Analisar os autos observando se a correção solicitada na tarefa 2 foi realizada a contento.
+Executantes
+Assessoria GAB, Gestão de contratos, Núcleo de Controle Interno
+Responsável
+Setor Responsável
+Consultado
+Assessoria GAB
+Informado
+Assessoria GAB
+| 20
+3 Envolvidos
+3.1 Representante legal (Função)
+3.2 Gestão de contratos (Função)
+3.3 Fiscal de contrato (Função)
+3.4 Núcleo de Controle Interno (Função)
+3.5 Assessoria GAB (Função)
+3.6 Gerência Funsaúde (Função)
+3.7 Contabilidade (Função)
+3.8 Execução Financeira (Função)
+3.9 Ordenador de despesa (Função)
+3.10 Setor Responsável (Função)
+3.11 Servidor designado (Função)

@@ -6,12 +6,13 @@ let text  = ""
 let list_chunks = []
 let list_cont_emb = []
 let resposta = document.getElementById("resposta")
+
 async function getText(path){
   const document = await fetch(path)
   const text = await document.text()
   return text
 }
-text = await getText("text.txt")
+text = await getText("manualPagamentos.txt")
 
 async function textSplitter(){
   const textSplitter = new RecursiveCharacterTextSplitter({

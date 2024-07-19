@@ -1,0 +1,70 @@
+MANUAL DE SOLICITAÇÃO DE PAGAMENTOS Passo a passo para fornecedores e prestadores de serviços da SESAPI
+APRESENTAÇÃO 
+Este Manual contém orientações para abertura de
+processo eletrônico no Sistema Eletrônico de
+Informações - SEI para Solicitação de Pagamento pelos
+fornecedores e prestadores de serviços que possuam
+contratos firmados com a Secretaria de Estado da Saúde
+do Piauí – SESAPI.
+Dessa forma, pretende-se dar mais celeridade aos
+processos de pagamentos a fornecedores e prestadores
+de serviços da SESAPI, além de estar alinhado às
+políticas de Governo Digital no que se refere à
+transformação do governo por meio de tecnologias
+digitais, ofertando serviços de melhor qualidade aos
+usuários, de forma simples e acessível a qualquer hora e
+lugar.
+Importante ressaltar que a instauração de processos
+eletrônicos para solicitação de pagamento aplica-se
+somente quando o fornecedor ou prestador de serviços
+possuir contrato celebrado com a SESAPI.
+Teresina, setembro de 2023
+COMO ABRIR SOLICITAÇÃO DE PAGAMENTO NO SEI Usuário Externo seleciona “Peticionamento > Processo
+Novo” para cada pedido de pagamento. A opção
+“Intercorrente” deve ser utilizada somente quando houver
+necessidade de incluir novos documentos em processo já
+existente. Usuário Externo abre a caixa de seleção do órgão e escolhe
+“SESAPI-PI” para visualizar os tipos de processo de
+pagamento disponíveis.
+Usuário Externo clica em cima do processo de pagamento
+adequado para sua solicitação. Importante a leitura das “Orientações sobre o Tipo de
+Processo“ para assegurar a correta instrução processual e
+evitar prejuízo na celeridade do pagamento.
+Em “Documento Principal” o Usuário Externo inclui
+documento “Requerimento de Pagamento”, escolhe “Nível
+de Acesso” e o “Formato”.
+Em “Documentos Essenciais” o usuário Externo inclui cada
+um dos documentos listados na caixa “Tipo de
+Documento”, escolhe “Nível de Acesso” e o “Formato”.
+Em “Documentos Complementares”, o usuário Externo
+inclui os documentos que entender ser necessário para
+integrar o processo na caixa “Tipo de Documento”, escolhe
+“Nível de Acesso” e o “Formato”. Ao final, clica em
+“Peticionar”, ação essencial para concluir a instauração do
+processo e geração do "Recibo Eletrônico de Protocolo".
+ORIENTAÇÕES SOBRE O TIPO DE PROCESSO
+Para cada pedido de pagamento é necessário que o
+Usuário Externo instaure novo processo, iniciando no
+campo “Peticionamento > Processo Novo”.
+A opção “Intercorrente” deve ser utilizada
+eventualmente, quando houver necessidade de incluir
+novos documentos em processo já existente.
+SECRETARIA DE FAZENDA DO PIAUÍ
+SUPERINTENDÊNCIA DE CONTROLADORIA-GERAL DO ESTADO DO PIAUÍ
+Av. Pedro Freitas, 1900, 2º andar, Prédio CGE/ATI – Centro Administrativo
+Bairro São Pedro – Teresina/PI – CEP: 64.018-900
+Fones: (086) 3326-2000
+Site: http://www.cge.pi.gov.br
+E-mail: cge@cge.pi.gov.br
+ELABORAÇÃO:
+ILUSKA ROLIM RODRIGUES DE ASSUNÇÃO
+Auditora Governamental
+KENNIA FERNANDA CASTELO BRANCO FERREIRA
+Auditora Governamental
+REVISÃO GERAL:
+ERALDO FERREIRA R. DA SILVA
+Auditor Governamental
+Gerente dos Núcleos Setoriais
+KILMER TÁVORA TEIXEIRA
+Auditor Governamental
+Diretor da Unidade de Controladoria

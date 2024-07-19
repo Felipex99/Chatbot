@@ -90,15 +90,15 @@ const list_content_embedding = await embedding(list_chunks)
             await gerarResposta();
             splitDocument("./src/text.txt")
         })
-        //})
-        //await supabase.from("text").insert(list_content_embedding)
-        // console.log("Data Uploaded!!!")
+
+        await supabase.from("text").insert(list_content_embedding)
+        console.log("Data Uploaded!!!")
         
-        // const {data,error} = await supabase.from(table).insert(list_content_embedding)
-        // console.log("O QUE É O DATA::",data)
-        // if(error){
-        //     console.error("III CARAI: ",error.message)
-        // }else{
-        //     console.log("Upload de dados feito com sucesso na tabela ",table,": https://supabase.com/dashboard/project/ohitcvvlqfjnnxtacgtb/editor/29487")
-        //     console.log("Etapa SUPABASE 5/5 concluída")
-        // }
+        const {data,error} = await supabase.from(table).insert(list_content_embedding)
+        console.log("O QUE É O DATA::",data)
+        if(error){
+            console.error("III CARAI: ",error.message)
+        }else{
+            console.log("Upload de dados feito com sucesso na tabela ",table,": https://supabase.com/dashboard/project/ohitcvvlqfjnnxtacgtb/editor/29616")
+            console.log("Etapa SUPABASE 5/5 concluída")
+        }
