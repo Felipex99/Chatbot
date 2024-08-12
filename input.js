@@ -43,6 +43,7 @@ async function exec(){
     const match_response = await matchResponse(embedding_prompt)
     console.log("exec txt prompt: ",txt_prompt)
     console.log("exec match response: ",match_response)
+    console.log("EMBEDDING DA PERGUNTA",embedding_prompt.embedding)
     return match_response
 }
 
@@ -66,14 +67,15 @@ async function createEmbedding(txt){
 }
 
 
+
 //3 recuperando embeddings similares da pergunta
 
 // console.log(match_response)
 
 async function matchResponse(embedding_prompt){
-    const { data: documents } = await supabase.rpc("match_ollama_new", {
+    const { data: documents } = await supabase.rpc("manual", {
         query_embedding: embedding_prompt, // Pass the embedding you want to compare
-        match_threshold: 0.68, // Choose an appropriate threshold for your data
+        match_threshold: 0.38, // Choose an appropriate threshold for your data
         match_count: 5, // Choose the number of matches
         })
     return documents
@@ -110,5 +112,9 @@ function loading_star(star_visibility){
     star.style.display = star_visibility
     prompt.value = ''
 }
+
+const clienteLamma = ollama.chat({
+    model,
+})
 // const resposta_ia = await rag(textInput, match_response)
 // console.log(resposta_ia)
